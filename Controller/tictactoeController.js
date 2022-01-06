@@ -2,7 +2,7 @@ class TTTController {
   constructor() {
     const tomb = [];
     new Jatekter(tomb);
-    const info=new infoView();
+     this.info=new infoView();
     const kiertekeles = new Kiertekeles(tomb);
     //Ellenőrizzük, hogy van e győzelem
 
@@ -25,8 +25,8 @@ class TTTController {
           this.info.setJatekVege("O nyert");
           this.jatekVege(tomb);
       }else if(this.lepes===9){
-        info.setJatekVege("Döntetlen");
-        info.setKovetkezoJatekos("Jaték vége.");
+        this.info.setJatekVege("Döntetlen");
+        this.info.setKovetkezoJatekos("Jaték vége.");
       }
     });
   }
